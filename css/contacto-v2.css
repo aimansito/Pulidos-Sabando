@@ -1,0 +1,219 @@
+/* ==================== CONTACT PAGE (ACTUALIZADO) ==================== */
+.contact-main {
+    padding: 6rem 2rem;
+    background: var(--light-gray);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.contact-form-section h2,
+.contact-info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    color: var(--text-dark);
+    letter-spacing: 0.5px;
+}
+
+.contact-hero {
+    background-image: url('../img/portatil.png'); /* ← aquí tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 8rem 2rem;
+    position: relative;
+}
+
+/* Para oscurecer un poco la imagen y que el texto resalte */
+.contact-hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.contact-hero .hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.contact-form-section p {
+    color: var(--gray);
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+/* ===== FORMULARIO ===== */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    background: white;
+    padding: 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.05);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.9rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+    background: #fefefe;
+    border-color: #dcdcdc;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    background: #ffffff;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.1);
+    outline: none;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+/* ===== BOTÓN DE ENVÍO ===== */
+.submit-button {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 6px;
+    background: var(--accent-color);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: flex-start;
+}
+
+.submit-button:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.form-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+/* ===== INFO CONTACTO ===== */
+.contact-info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-info-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.contact-info-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+}
+
+.contact-icon {
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--accent-color);
+}
+
+.contact-details h3 {
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.contact-subtext {
+    font-size: 0.85rem;
+    color: var(--gray);
+}
+
+.contact-emergency {
+    background: #fff7f7;
+    padding: 1.5rem;
+    border: 1px solid #ffd5d5;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.contact-emergency h3 {
+    color: #b00020;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 1.8rem;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}

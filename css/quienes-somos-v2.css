@@ -1,0 +1,326 @@
+/* ==================== QUIÉNES SOMOS - STYLES CSS ==================== */
+
+/* ==================== ABOUT CONTENT ==================== */
+.about-content {
+    padding: 6rem 2rem;
+    background: var(--text-light);
+}
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    letter-spacing: 0.5px;
+}
+
+.about-text p {
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.about-image {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+
+.placeholder-image {
+    width: 100%;
+    height: 100%;
+    background: var(--light-gray);
+    border: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--gray);
+    transition: all 0.3s ease;
+}
+
+.placeholder-image span {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.placeholder-image p {
+    font-size: 0.9rem;
+    color: var(--gray);
+}
+
+.placeholder-image:hover {
+    background: #f5f5f5;
+    border-color: var(--accent-color);
+}
+
+/* ==================== MISSION & VISION ==================== */
+.mission-vision {
+    padding: 6rem 2rem;
+    background: var(--light-gray);
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.mv-card {
+    background: white;
+    padding: 3rem 2rem;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.mv-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent-color);
+}
+
+.mv-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.mv-card:hover .mv-icon {
+    transform: scale(1.1);
+}
+
+.mv-card h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    color: var(--text-dark);
+    letter-spacing: 0.3px;
+}
+
+.mv-card p {
+    color: var(--gray);
+    line-height: 1.8;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+/* ==================== TEAM SECTION ==================== */
+.team-section {
+    padding: 6rem 2rem;
+    background: var(--text-light);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+}
+
+.team-member {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: var(--accent-color);
+}
+
+.team-photo {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover .team-photo {
+    border-color: var(--accent-color);
+}
+
+.team-photo .placeholder-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: none;
+}
+
+.team-photo .placeholder-image span {
+    font-size: 3rem;
+}
+
+.team-member h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+    letter-spacing: 0.3px;
+}
+
+.team-role {
+    color: var(--accent-color);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-member p:not(.team-role) {
+    color: var(--gray);
+    line-height: 1.8;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+/* ==================== STATS SECTION ==================== */
+.stats-section {
+    padding: 6rem 2rem;
+    background: var(--accent-color);
+    color: var(--text-light);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+}
+
+.stat-box {
+    text-align: center;
+    padding: 2rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+    color: var(--text-light);
+    letter-spacing: 1px;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-image {
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        padding: 4rem 1.5rem;
+    }
+
+    .mission-vision {
+        padding: 4rem 1.5rem;
+    }
+
+    .team-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .stats-section {
+        padding: 4rem 1.5rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-content {
+        padding: 3rem 1rem;
+    }
+
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+
+    .about-image {
+        min-height: 300px;
+    }
+
+    .mv-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .mv-icon {
+        font-size: 2.5rem;
+    }
+
+    .team-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .stat-label {
+        font-size: 0.9rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* ==================== END OF QUIÉNES SOMOS STYLES ==================== */

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta con Pulidos Sabando - Solicita presupuesto sin compromiso">
+    <title>Contacto - Pulidos Sabando</title>
+    <link rel="stylesheet" href="../css/styles-v2.css">
+    <link rel="stylesheet" href="../css/contacto-v2.css">
+</head>
+
+<body>
+    <!-- Header (igual que en index.html) -->
+   <header>
+        <div class="header-container">
+            <!-- Botón hamburguesa -->
+            <button class="mobile-menu-toggle" aria-label="Menú">
+                <span class="hamburger-icon">☰</span>
+            </button>
+
+            <!-- Logo en el centro -->
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-img">
+                        <img src="../img/logo-sinfondo.png" alt="Pulidos Sabando">
+                    </div>
+                </a>
+            </div>
+
+            <!-- Navegación (se oculta en móvil) -->
+            <nav>
+                <ul>
+                    <li><a href="../index.html" class="active">Inicio</a></li>
+                    <li><a href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="trabajos.html">Trabajos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <!-- Idiomas y Contacto a la derecha -->
+            <div class="header-right">
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="es" aria-label="Español">
+                        <img src="https://flagcdn.com/w40/es.png" alt="Español">
+                    </button>
+                    <button class="lang-btn" data-lang="en" aria-label="English">
+                        <img src="https://flagcdn.com/w40/gb.png" alt="English">
+                    </button>
+                </div>
+
+                <a href="tel:+34 687 121 786" class="header-contact">
+                    <span class="header-contact-icon">📞</span>
+                    <span>+34 687 121 786</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Hero (similar al index pero adaptado a la página de contacto) -->
+    <section class="hero contact-hero">
+        <div class="hero-content">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte — Solicita tu presupuesto sin compromiso</p>
+            <a href="#contactForm" class="cta-button">Ir al Formulario</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section fade-in">
+                    <h2>Solicitar Presupuesto</h2>
+                    <p>Rellena el formulario y nos pondremos en contacto contigo lo antes posible</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Teléfono *</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="+34 XXX XXX XXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="location">Ubicación *</label>
+                                <input type="text" id="location" name="location" required
+                                    placeholder="Ciudad/Provincia">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Servicio *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Seleccione un servicio</option>
+                                <option value="pulido">Pulido de Suelos</option>
+                                <option value="abrillantado">Abrillantado</option>
+                                <option value="restauracion">Restauración</option>
+                                <option value="mantenimiento">Mantenimiento</option>
+                                <option value="limpieza">Limpieza Profesional</option>
+                                <option value="otro">Otro Servicio</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="surface">Tipo de Superficie</label>
+                            <select id="surface" name="surface">
+                                <option value="">Seleccione el tipo de suelo</option>
+                                <option value="marmol">Mármol</option>
+                                <option value="granito">Granito</option>
+                                <option value="terrazo">Terrazo</option>
+                                <option value="hormigon">Hormigón</option>
+                                <option value="piedra">Piedra Natural</option>
+                                <option value="ceramica">Cerámica/Gres</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="area">Área Aproximada (m²)</label>
+                            <input type="number" id="area" name="area" placeholder="Ej: 100">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mensaje / Detalles del Proyecto *</label>
+                            <textarea id="message" name="message" required
+                                placeholder="Cuéntanos más sobre tu proyecto..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="privacy" required>
+                                He leído y acepto la política de privacidad
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-button">Enviar Solicitud</button>
+                        <div id="formMessage" class="form-message"></div>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section fade-in">
+                    <h2>Información de Contacto</h2>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>+34 687 217 786</p>
+                            <p class="contact-subtext">Lun - Vie: 8:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>sabandopulidos@gmail.com</p>
+                            <p class="contact-subtext">Respuesta en 24h</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>Marbella, Málaga</p>
+                            <p class="contact-subtext">Servicio en toda la región</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <div class="contact-icon">⏰</div>
+                        <div class="contact-details">
+                            <h3>Horario</h3>
+                            <p>Lunes - Viernes: 8:00 - 18:00</p>
+                            <p>Sábados: 9:00 - 14:00</p>
+                            <p>Domingos: Cerrado</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-emergency">
+                        <h3>🚨 Servicios de Urgencia</h3>
+                        <p>Para emergencias, contáctanos directamente por teléfono</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <div class="map-container fade-in">
+                <div class="map-placeholder">
+                    <p>🗺️</p>
+                    <p>Mapa de Marbella, Andalucía</p>
+                    <p style="font-size: 0.9rem; color: #666; margin-top: 1rem;">Inserta aquí tu iframe de Google Maps
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿Tienes alguna pregunta?</h2>
+            <p>No dudes en contactarnos, estaremos encantados de ayudarte</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem;">
+                <a href="tel:+34 687 121 786" class="cta-button">Llamar Ahora</a>
+                <a href="mailto:sabandopulidos@gmail.com" class="cta-button"
+                    style="background: white; color: var(--accent-color); border: 1px solid var(--accent-color);">Enviar
+                    Email</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo">
+                    <div class="logo-img" style="width: 150px;">
+                        <img src="img/logo.png" alt="Pulidos Sabando" style="filter: brightness(0) invert(1);">
+                    </div>
+                </div>
+                <h3>Pulidos Sabando</h3>
+                <p>Expertos en pulido y abrillantado de suelos desde 2008.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <p>📞 Teléfono: +34 687 121 786</p>
+                <p>📧 Email: sabandopulidos@gmail.com</p>
+                <p>📍 Ubicación: Marbella, Andalucía</p>
+            </div>
+            <div class="footer-section">
+                <h3>Horario</h3>
+                <p>Lunes - Viernes: 8:00 - 18:00</p>
+                <p>Sábados: 9:00 - 14:00</p>
+                <p>Domingos: Cerrado</p>
+            </div>
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <p><a href="../index.html">Inicio</a></p>
+                <p><a href="quienes-somos.html">Quiénes Somos</a></p>
+                <p><a href="servicios.html">Servicios</a></p>
+                <p><a href="trabajos.html">Trabajos</a></p>
+                <p><a href="contacto.html">Contacto</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pulidos Sabando. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
