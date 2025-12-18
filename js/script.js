@@ -134,7 +134,7 @@ function setupScrollAnimations() {
         const wasMobile = previousWidth <= 768;
         const isNowMobile = currentWidth <= 768;
         
-        if (wasMode !== isNowMobile) {
+        if (wasMobile !== isNowMobile) {
             observer.disconnect();
             setupScrollAnimations();
         }
@@ -354,7 +354,7 @@ function setupScrollToTop() {
     
     if (!scrollBtn) {
         scrollBtn = document.createElement('button');
-        scrollBtn.innerHTML = '↑';
+        scrollBtn.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>';
         scrollBtn.className = 'scroll-to-top';
         scrollBtn.setAttribute('aria-label', 'Volver arriba');
         document.body.appendChild(scrollBtn);
@@ -393,13 +393,15 @@ function setupMobileMenu() {
     newToggleBtn.addEventListener('click', (e) => {
         e.stopPropagation();
         const isOpen = nav.classList.contains('mobile-open');
-        
+
         if (isOpen) {
             nav.classList.remove('mobile-open');
             if (hamburgerIcon) hamburgerIcon.textContent = '☰';
+            newToggleBtn.setAttribute('aria-expanded', 'false');
         } else {
             nav.classList.add('mobile-open');
             if (hamburgerIcon) hamburgerIcon.textContent = '✕';
+            newToggleBtn.setAttribute('aria-expanded', 'true');
         }
     });
     
@@ -408,6 +410,7 @@ function setupMobileMenu() {
         link.addEventListener('click', () => {
             nav.classList.remove('mobile-open');
             if (hamburgerIcon) hamburgerIcon.textContent = '☰';
+            newToggleBtn.setAttribute('aria-expanded', 'false');
         });
     });
     
@@ -417,6 +420,7 @@ function setupMobileMenu() {
             if (nav.classList.contains('mobile-open')) {
                 nav.classList.remove('mobile-open');
                 if (hamburgerIcon) hamburgerIcon.textContent = '☰';
+                newToggleBtn.setAttribute('aria-expanded', 'false');
             }
         }
     });

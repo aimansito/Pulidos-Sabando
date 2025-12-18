@@ -5,19 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Pulidos Sabando - Expertos en pulido y abrillantado de suelos en Granada y Andalucía"
+      content="Pulidos Sabando - Expertos en pulido, abrillantado y restauración de suelos en Andalucía. +15 años de experiencia. Servicio profesional garantizado en 24-48h."
     />
-    <title>Pulidos Sabando - Expertos en Pulido y Abrillantado de Suelos</title>
+    <title>Pulidos Sabando - Pulido y Abrillantado Profesional de Suelos | Andalucía</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pulidossabando.com/" />
+    <meta property="og:title" content="Pulidos Sabando - Pulido y Abrillantado Profesional de Suelos" />
+    <meta property="og:description" content="Expertos en pulido, abrillantado y restauración de suelos en Andalucía. +15 años de experiencia con resultados garantizados." />
+    <meta property="og:image" content="https://pulidossabando.com/img/fondoChat.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pulidossabando.com/" />
+    <meta property="twitter:title" content="Pulidos Sabando - Pulido y Abrillantado Profesional" />
+    <meta property="twitter:description" content="Expertos en pulido y abrillantado de suelos en Andalucía. +15 años de experiencia." />
+    <meta property="twitter:image" content="https://pulidossabando.com/img/fondoChat.png" />
+
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="ES-AN" />
+    <meta name="geo.placename" content="Marbella" />
+    <meta name="geo.position" content="36.5099;-4.8824" />
+
     <link rel="stylesheet" href="./css/styles-v2.css" />
     <link rel="stylesheet" href="./css/carousel.css" />
+
+    <!-- JSON-LD Structured Data para LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://pulidossabando.com",
+      "name": "Pulidos Sabando",
+      "image": "https://pulidossabando.com/img/logo-sinfondo.png",
+      "logo": "https://pulidossabando.com/img/logo-sinfondo.png",
+      "url": "https://pulidossabando.com",
+      "telephone": "+34687121786",
+      "email": "sabandopulidos@gmail.com",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressLocality": "Marbella",
+        "addressRegion": "Málaga",
+        "postalCode": "",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.5099,
+        "longitude": -4.8824
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "14:00"
+        }
+      ],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Granada"
+        },
+        {
+          "@type": "City",
+          "name": "Málaga"
+        },
+        {
+          "@type": "City",
+          "name": "Sevilla"
+        },
+        {
+          "@type": "City",
+          "name": "Marbella"
+        }
+      ],
+      "serviceType": [
+        "Pulido de suelos",
+        "Abrillantado de suelos",
+        "Restauración de suelos",
+        "Mantenimiento de suelos",
+        "Tratamiento de mármol",
+        "Tratamiento de granito",
+        "Tratamiento de terrazo"
+      ],
+      "description": "Pulidos Sabando ofrece servicios profesionales de pulido, abrillantado y restauración de suelos en toda Andalucía. Con más de 15 años de experiencia, garantizamos resultados de calidad en mármol, granito, terrazo y todo tipo de superficies.",
+      "foundingDate": "2008",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87"
+      }
+    }
+    </script>
   </head>
 
   <body>
+    <!-- Skip to content link para accesibilidad -->
+    <a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
     <!-- Header Mejorado -->
     <header>
       <div class="header-container">
         <!-- Botón hamburguesa -->
-        <button class="mobile-menu-toggle" aria-label="Menú">
+        <button class="mobile-menu-toggle" aria-label="Menú de navegación" aria-expanded="false" aria-controls="main-navigation">
           <span class="hamburger-icon">☰</span>
         </button>
 
@@ -31,7 +131,7 @@
         </div>
 
         <!-- Navegación (se oculta en móvil) -->
-        <nav>
+        <nav id="main-navigation" aria-label="Navegación principal">
           <ul>
             <li><a href="#" class="active">Inicio</a></li>
             <li><a href="./html/quienes-somos.html">Quiénes Somos</a></li>
@@ -53,7 +153,9 @@
           </div>
 
           <a href="tel:+34687121786" class="header-contact">
-            <span class="header-contact-icon">📞</span>
+            <svg class="header-contact-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
             <span>+34 687 121 786</span>
           </a>
         </div>
@@ -63,75 +165,193 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Pulidos Sabando</h1>
-        <p>Expertos en Pulido y Abrillantado de Suelos</p>
-        <a href="../html/contacto.html" class="cta-button"
-          >Solicitar Presupuesto</a
-        >
+        <div class="hero-badge">Profesionales desde 2008</div>
+        <h1>Transforma tus Suelos con Brillo Profesional</h1>
+        <p class="hero-subtitle">Pulido, abrillantado y restauración de suelos en toda Andalucía. Resultados garantizados que perduran en el tiempo.</p>
+
+        <!-- Badges de confianza -->
+        <div class="hero-badges">
+          <div class="badge-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+            <span>+15 Años de Experiencia</span>
+          </div>
+          <div class="badge-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+            <span>Garantía de Calidad</span>
+          </div>
+          <div class="badge-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"></circle>
+              <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <span>Respuesta Rápida</span>
+          </div>
+        </div>
+
+        <!-- CTAs dobles -->
+        <div class="hero-ctas">
+          <a href="html/contacto.html" class="cta-button primary">
+            Solicitar Presupuesto
+          </a>
+          <a href="tel:+34687121786" class="cta-button secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right: 0.5rem;">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            687 121 786
+          </a>
+        </div>
+
+        <!-- Strip de confianza -->
+        <div class="hero-trust">
+          <div class="trust-stats">
+            <div class="trust-stat">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+              <span>4.9/5</span>
+            </div>
+            <div class="trust-stat">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+              <span>+500 Clientes</span>
+            </div>
+            <div class="trust-stat">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Toda Andalucía</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- Services Preview -->
-    <section class="services-preview fade-in">
+    <section id="main-content" class="services-preview fade-in">
       <div class="container">
-        <h2 class="section-title">Nuestros Servicios</h2>
+        <h2 class="section-title">Servicios Profesionales de Pulido y Restauración</h2>
+        <p class="section-subtitle">Soluciones completas para todo tipo de superficies</p>
+
         <div class="services-grid">
-          <a href="servicios.html#pulido" class="service-card">
+          <a href="html/servicios.html#pulido" class="service-card">
             <div class="service-image">
-              <!--<span style="font-size: 3rem; color: var(--gray);">🔨</span> -->
-              <img src="img/pulidoIndex.jpg" alt="Sección pulidos" />
+              <img src="img/pulidoIndex.jpg" alt="Pulido de suelos profesional" loading="lazy" width="400" height="300" />
+              <div class="service-badge">Más Popular</div>
             </div>
             <div class="service-content">
+              <div class="service-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 16v-4"></path>
+                  <path d="M12 8h.01"></path>
+                </svg>
+              </div>
               <h3>Pulido de Suelos</h3>
-              <p>
-                Restauramos y pulimos todo tipo de suelos con la última
-                tecnología y acabados perfectos.
+              <p class="service-description">
+                Restauración completa con acabados perfectos y duraderos
               </p>
+              <ul class="service-benefits">
+                <li>Elimina arañazos y manchas profundas</li>
+                <li>Tecnología de pulido en seco y húmedo</li>
+                <li>Acabado espejo de alta calidad</li>
+                <li>Mármol, granito, terrazo y más</li>
+              </ul>
+              <span class="service-link">Ver detalles →</span>
             </div>
           </a>
-          <a href="servicios.html#abrillantado" class="service-card">
+
+          <a href="html/servicios.html#abrillantado" class="service-card">
             <div class="service-image">
-              <!-- <span style="font-size: 3rem; color: var(--gray);">✨</span> -->
-              <img src="img/fotoVistas.jpg" alt="Sección abrillantado" />
+              <img src="img/fotoVistas.jpg" alt="Abrillantado de suelos" loading="lazy" width="400" height="300" />
             </div>
             <div class="service-content">
+              <div class="service-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
               <h3>Abrillantado</h3>
-              <p>
-                Damos brillo y protección duradera a sus suelos con técnicas
-                profesionales.
+              <p class="service-description">
+                Brillo profesional duradero con protección avanzada
               </p>
+              <ul class="service-benefits">
+                <li>Brillo natural de larga duración</li>
+                <li>Protección contra manchas y líquidos</li>
+                <li>Realza el color original del suelo</li>
+                <li>Tratamiento anti-deslizante opcional</li>
+              </ul>
+              <span class="service-link">Ver detalles →</span>
             </div>
           </a>
-          <a href="servicios.html#restauracion" class="service-card">
+
+          <a href="html/servicios.html#restauracion" class="service-card">
             <div class="service-image">
-              <!-- <span style="font-size: 3rem; color: var(--gray);">🛠️</span>  -->
-              <img src="img/restauracion.jpg" alt="Sección restauración" />
+              <img src="img/restauracion.jpg" alt="Restauración de suelos" loading="lazy" width="400" height="300" />
             </div>
             <div class="service-content">
+              <div class="service-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
               <h3>Restauración</h3>
-              <p>
-                Recuperamos suelos dañados devolviéndoles su esplendor original.
+              <p class="service-description">
+                Devuelve la vida a suelos deteriorados
               </p>
+              <ul class="service-benefits">
+                <li>Reparación de grietas y roturas</li>
+                <li>Nivelación de superficies irregulares</li>
+                <li>Recuperación de brillo original</li>
+                <li>Tratamiento de manchas persistentes</li>
+              </ul>
+              <span class="service-link">Ver detalles →</span>
             </div>
           </a>
-          <a href="servicios.html#mantenimiento" class="service-card">
+
+          <a href="html/servicios.html#mantenimiento" class="service-card">
             <div class="service-image">
-              <!-- <span style="font-size: 3rem; color: var(--gray);">🏠</span> -->
-              <img src="img/pintura.jpg" alt="Sección pinturas" />
+              <img src="img/pintura.jpg" alt="Pinturas y mantenimiento" loading="lazy" width="400" height="300" />
             </div>
             <div class="service-content">
+              <div class="service-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
+                  <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                  <path d="M2 2l7.586 7.586"></path>
+                  <circle cx="11" cy="11" r="2"></circle>
+                </svg>
+              </div>
               <h3>Pinturas</h3>
-              <p>
-                Servicio de mantenimiento periódico para conservar sus suelos
-                impecables.
+              <p class="service-description">
+                Acabados profesionales para interiores y exteriores
               </p>
+              <ul class="service-benefits">
+                <li>Pinturas de alta calidad certificadas</li>
+                <li>Preparación profesional de superficies</li>
+                <li>Interiores, exteriores y fachadas</li>
+                <li>Garantía de acabado perfecto</li>
+              </ul>
+              <span class="service-link">Ver detalles →</span>
             </div>
           </a>
         </div>
-        <div style="text-align: center; margin-top: 3rem">
-          <a href="html/servicios.html" class="cta-button"
-            >Ver Todos los Servicios</a
-          >
+
+        <div class="service-cta">
+          <h3>¿No estás seguro de qué servicio necesitas?</h3>
+          <p>Te asesoramos sin compromiso y te ayudamos a elegir la mejor solución</p>
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+            <a href="html/servicios.html" class="cta-button primary">Ver Todos los Servicios</a>
+            <a href="html/contacto.html" class="cta-button secondary">Consultar Ahora</a>
+          </div>
         </div>
       </div>
     </section>
@@ -161,6 +381,9 @@
                     <img
                       src="img/pulidos/IMG-20250930-WA0003.jpg"
                       alt="Pulido proyecto 1"
+                      loading="lazy"
+                      width="800"
+                      height="600"
                       onerror="this.src='img/placeholder.jpg'"
                     />
                     <div class="carousel-overlay">
@@ -383,44 +606,98 @@
     <!-- Why Choose Us -->
     <section class="why-choose fade-in">
       <div class="container">
-        <h2 class="section-title">¿Por Qué Elegirnos?</h2>
+        <h2 class="section-title">¿Por Qué Más de 500 Clientes Confían en Nosotros?</h2>
+
+        <!-- Métricas destacadas -->
+        <div class="metrics-row">
+          <div class="metric-card">
+            <div class="metric-number">15+</div>
+            <div class="metric-label">Años de Experiencia</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">+50.000</div>
+            <div class="metric-label">m² Pulidos</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">4.9/5</div>
+            <div class="metric-label">Valoración Media</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number">98%</div>
+            <div class="metric-label">Clientes Satisfechos</div>
+          </div>
+        </div>
+
         <div class="reasons-grid">
           <div class="reason-box">
-            <div class="reason-icon">⭐</div>
-            <h3>Experiencia</h3>
+            <div class="reason-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+            </div>
+            <h3>Experiencia Probada</h3>
             <p>
-              Más de 15 años en el sector del pulido y tratamiento de suelos.
+              Más de 15 años perfeccionando nuestra técnica en pulido y abrillantado. Proyectos residenciales, comerciales y corporativos.
             </p>
           </div>
           <div class="reason-box">
-            <div class="reason-icon">🎯</div>
-            <h3>Calidad</h3>
+            <div class="reason-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Materiales Premium</h3>
             <p>
-              Utilizamos materiales de primera calidad y las mejores técnicas
-              del mercado.
+              Utilizamos solo productos de primera calidad certificados. Técnicas profesionales que garantizan durabilidad.
             </p>
           </div>
           <div class="reason-box">
-            <div class="reason-icon">💼</div>
-            <h3>Profesionalidad</h3>
+            <div class="reason-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Equipo Especializado</h3>
             <p>
-              Equipo altamente cualificado y comprometido con cada proyecto.
+              Profesionales altamente cualificados y en formación continua. Trato personalizado en cada proyecto.
             </p>
           </div>
           <div class="reason-box">
-            <div class="reason-icon">⚡</div>
-            <h3>Rapidez</h3>
-            <p>Cumplimos plazos sin comprometer la calidad del trabajo.</p>
+            <div class="reason-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3>Servicio Rápido</h3>
+            <p>Respuesta en 24-48h para presupuestos. Cumplimos plazos acordados sin comprometer la calidad.</p>
           </div>
           <div class="reason-box">
-            <div class="reason-icon">💰</div>
-            <h3>Precios Competitivos</h3>
-            <p>La mejor relación calidad-precio del mercado.</p>
+            <div class="reason-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3>Precios Transparentes</h3>
+            <p>
+              Presupuestos detallados sin sorpresas. La mejor relación calidad-precio de Andalucía.
+            </p>
           </div>
           <div class="reason-box">
-            <div class="reason-icon">🤝</div>
-            <h3>Garantía</h3>
-            <p>Ofrecemos garantía en todos nuestros trabajos.</p>
+            <div class="reason-icon">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+                <line x1="14" y1="14" x2="20" y2="20"></line>
+                <line x1="20" y1="14" x2="14" y2="20"></line>
+              </svg>
+            </div>
+            <h3>Garantía Total</h3>
+            <p>Garantía extendida en todos los trabajos realizados. Soporte post-servicio incluido.</p>
           </div>
         </div>
       </div>
@@ -433,7 +710,11 @@
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-image">
-              <span style="font-size: 2rem">📷</span>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
             </div>
             <div class="project-info">
               <h3>Proyecto Residencial</h3>
@@ -442,7 +723,11 @@
           </div>
           <div class="project-card">
             <div class="project-image">
-              <span style="font-size: 2rem">📷</span>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
             </div>
             <div class="project-info">
               <h3>Oficinas Corporativas</h3>
@@ -451,7 +736,11 @@
           </div>
           <div class="project-card">
             <div class="project-image">
-              <span style="font-size: 2rem">📷</span>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                <polyline points="21 15 16 10 5 21"></polyline>
+              </svg>
             </div>
             <div class="project-info">
               <h3>Centro Comercial</h3>
@@ -494,9 +783,26 @@
         </div>
         <div class="footer-section">
           <h3>Contacto</h3>
-          <p>📞 Teléfono: +34 687 121 786</p>
-          <p>📧 Email: sabandopulidos@gmail.com</p>
-          <p>📍 Ubicación: Marbella, Andalucía</p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block;vertical-align:middle;margin-right:8px">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+            Tel\u00e9fono: +34 687 121 786
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block;vertical-align:middle;margin-right:8px">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            Email: sabandopulidos@gmail.com
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:inline-block;vertical-align:middle;margin-right:8px">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            Ubicaci\u00f3n: Marbella, Andaluc\u00eda
+          </p>
         </div>
         <div class="footer-section">
           <h3>Horario</h3>
@@ -518,7 +824,18 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
-    <script src="js/carousel.js"></script>
+    <!-- Botón flotante de WhatsApp (móvil) -->
+    <a href="https://wa.me/34687121786?text=Hola,%20me%20gustaría%20solicitar%20información%20sobre%20sus%20servicios"
+       class="whatsapp-float"
+       target="_blank"
+       rel="noopener noreferrer"
+       aria-label="Contactar por WhatsApp">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+    </a>
+
+    <script src="js/script.js" defer></script>
+    <script src="js/carousel.js" defer></script>
   </body>
 </html>

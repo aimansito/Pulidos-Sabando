@@ -166,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     carousels.forEach(carouselElement => {
-        new Carousel(carouselElement);
+        carouselElement.carouselInstance = new Carousel(carouselElement);
     });
     
     console.log(`✅ ${carousels.length} carrusel(es) inicializado(s)`);
